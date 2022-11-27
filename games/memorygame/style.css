@@ -1,0 +1,42 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 300px;
+
+}
+
+.grid img{
+  border-radius: 12px;
+  margin: 7.5px;
+  transition: 0.3s;
+}
+
+.grid img:hover{
+  border-radius: 40px;
+}
+
+div{
+  position: relative;
+  left: 10%;
+}
+
+ @media screen and (min-width:677px) {
+  div{
+    position: relative;
+    left: 40%;
+  }
+ 
+} 
+
+h3{
+  position: relative;
+  left: 40%;
+}
+
+
+body{
+  font-family: sans-serif;
+  background-color: #07616d;
+  color:white;
+}

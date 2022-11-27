@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @font-face {
+           font-family: neon;
+           src: url(img/neon.ttf);
+         }
+        body{
+            
+            padding: 0px 0px;
+            margin: 0px 0px;
+            justify-content: center;
+            align-items: center;
+            max-height: 100vh;
+            background-color: rgb(0, 0, 0);
+            font-family: sans-serif;
+            overflow: hidden;
+            
+        }
+
+        h1{
+            font-family: neon;
+            position: relative;
+            top:140px;
+            font-size: 10em;
+            letter-spacing: 10px;
+            color: white;
+            text-align: center;
+            -webkit-box-reflect:below 1px linear-gradient(transparent,#0006) ;
+            line-height: 0.7em;
+            outline: none;
+            animation: animate 2.5s linear infinite;
+            /* transform: rotate(-10deg) skewX(10deg);
+            text-shadow: -1px 1px grey,
+                         -2px 2px grey,
+                         -3px 3px grey,
+                         -4px 4px grey,
+                         -5px 5px grey,
+                         -6px 6px grey,
+                         -7px 7px grey,
+                         -8px 8px grey,
+                         -9px 9px grey,
+                         -10px 10px white,
+                         -20px 20px rgba(0, 0, 0, 0.205) ; */
+             }
+
+         @keyframes animate {
+            0%,20%,40%,60%,80%,100%{
+                color: rgba(0, 0, 0, 0);
+                text-shadow: none;
+            }
+            10%,30%,50%,70%,90%{
+                color: rgb(197, 227, 230);
+                text-shadow: 0 0 10px rgb(255, 255, 255),
+                0 0 10px rgb(0, 187, 194),0 0 20px rgb(0, 187, 194),
+                0 0 30px rgb(0, 187, 194),0 0 40px rgb(0, 187, 194);
+
+            }
+            
+        } 
+     
+        #start{
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 36px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            color: white;
+            border: solid rgb(0, 187, 194);
+            transition: 0.5s;
+            position: relative;
+            left:700px;
+            top:180px;
+            
+            
+        }
+        #start:hover{
+            background-color: rgb(0, 187, 194);
+            box-shadow:0 0 10px rgb(0, 187, 194) ;    
+        }
+        #arcade{
+            filter: invert(1) brightness(0.65);
+            height: 90vh;
+            z-index: -1;
+            position: absolute;
+            top:25px;
+            right:-25px;   
+        }
+        #console{
+            filter: invert(1) brightness(0.65);
+            height: 400px;
+            z-index: -1;
+            position:absolute;
+            top: 480px;
+            left: 20px;
+            transform: rotateZ(45deg);
+        }
+           
+        a{
+            text-decoration: none;
+        }
+        
+      
+
+    </style>
+    <title>Arcade</title>
+</head>
+<body>
+
+    <h1>Arcade</h1>
+    <img id="arcade"src="img/arcade.png" > 
+    <a href="sub_index.html"><div id="start">Get Started</div></a>
+    <img id="console" src="img/console.png" > 
+    
+</body>
+</html>

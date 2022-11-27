@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <link rel="icon" href="info.svg">
+    <title>About Us</title>
+    <style>
+    body{
+          background:rgb(0, 27, 39);
+          padding:0px;
+          margin: 0px;
+    }
+
+ .rain{
+  height: 100vh;
+  background:url(rain.png) ;
+  animation: rain 0.3s linear infinite ;
+}
+
+
+@keyframes rain {
+  
+     0%{ background-position: 0% 0%;}
+    100%{background-position: 20% 100%;} 
+  } 
+
+body{
+  text-align: center;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 45px; 
+  overflow: hidden;
+}
+
+.maincontainer{
+  position: absolute;
+  width: 1000px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+}
+
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin: 10px;
+  box-shadow: 5px 7px #00f7ffa2;
+  
+  
+}
+
+.thecard:hover{
+  transform: rotateY(180deg);
+  box-shadow: 5px 7px #e2dada;
+}
+
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #ffffff;
+  color: rgb(5, 37, 68);
+}
+
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #00f7ffa2;
+  color: #ffffffee;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+.thefront,.theback{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+.thefront p, .theback p{
+  font-family: sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+
+    </style>
+  </head>
+ 
+  <body>
+
+    <div class="rain"></div>
+  
+    
+    <div class="maincontainer">
+      
+      
+
+      <div class="thecard">
+
+        <div class="thefront"><h1>Rishi</h1></div>
+
+        <div class="theback"><h1>Tic-tac-toe CSS</h1>
+        </div>
+
+      </div>
+
+      <div class="thecard">
+
+        <div class="thefront"><h1>Sanskar</h1></div>
+
+        <div class="theback"><h1> memory game CSS</h1>
+        </div>
+
+      </div>
+      
+      <div class="thecard">
+
+        <div class="thefront"><h1>Pulkit</h1></div>
+
+        <div class="theback"><h1>Homepage <br> + <br> tic-tac-toe JS</h1>
+    
+
+        </div>
+
+      </div>
+      
+      <div class="thecard">
+
+        <div class="thefront"><h1>Rajwant</h1></div>
+
+        <div class="theback"><h1>Memory Game JS</h1>
+        </div>
+
+      </div>
+      
+
+    
+  </body>
+</html>
